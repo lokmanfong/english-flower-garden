@@ -23,6 +23,7 @@ jobs:
         run: |
           mkdir -p dist
           unzip -q garden-pages.zip -d dist
+          unzip -oq garden-tap-audio2.zip -d dist
           touch dist/.nojekyll
       - uses: actions/upload-pages-artifact@v4
         with:
